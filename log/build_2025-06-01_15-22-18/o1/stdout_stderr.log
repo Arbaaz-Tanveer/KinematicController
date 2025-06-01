@@ -1,0 +1,174 @@
+-- The C compiler identification is GNU 11.4.0
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+-- Found FastRTPS: /opt/ros/humble/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)
+-- Found ompl: /usr/include/ompl-1.5;/usr/include;/usr/include/eigen3  
+-- Found OpenCV: /usr (found version "4.5.4") 
+-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options system filesystem 
+-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/arbaaz/KinematicController/src/o1/include;$<BUILD_INTERFACE:/home/arbaaz/KinematicController/src/o1/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/arbaaz/KinematicController/build/o1
+[ 60%] [32mBuilding CXX object CMakeFiles/main1.dir/src/Visualize.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/main1.dir/src/main1.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/controller1.dir/src/controller1.cpp.o[0m
+[01m[K/home/arbaaz/KinematicController/src/o1/src/Visualize.cpp:[m[K In member function ‘[01m[Kvoid Visualize::visualizeGame(std::vector<Point2D>&, Point2D&, int, double, std::vector<Point2D>&, Point2D&)[m[K’:
+[01m[K/home/arbaaz/KinematicController/src/o1/src/Visualize.cpp:179:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  179 |     for (int i = 0; [01;35m[Ki < obstacles.size()[m[K; i++) {
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:6[m[K:
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:[m[K In member function ‘[01m[Kvirtual double ValidityChecker::clearance(const ompl::base::State*) const[m[K’:
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:124:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  124 |         for (int i = 0; [01;35m[Ki < obstacles.size()[m[K; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:137:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<PointWithRadius>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  137 |         if ([01;35m[Kcount == v.size()[m[K)
+      |             [01;35m[K~~~~~~^~~~~~~~~~~[m[K
+In file included from [01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:6[m[K:
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:[m[K In function ‘[01m[Kstd::vector<Point2D> plan(double, double, double, std::vector<Point2D>&, optimalPlanner, planningObjective, Point2D&, Point2D&, Point2D&)[m[K’:
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:339:31:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  339 |             for (int i = 1; [01;35m[Ki < x_values.size()[m[K; i++)
+      |                             [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:350:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist_now_fin[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  350 |             float [01;35m[Kdist_now_fin[m[K = sqrt((nowPos.x - finalPos.x) * (nowPos.x - finalPos.x) + (nowPos.y - finalPos.y) * (nowPos.y - finalPos.y));
+      |                   [01;35m[K^~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:250:133:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KballPos[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  250 | ve objectiveType, Point2D &nowPos, Point2D &finalPos, [01;35m[KPoint2D &ballPos[m[K)
+      |                                                       [01;35m[K~~~~~~~~~^~~~~~~[m[K
+
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:[m[K In function ‘[01m[Kint findclosestpoint(std::vector<Point2D>&, Point2D&)[m[K’:
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:53:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+   53 |     for (int i = 0; [01;35m[Ki < targetPos.size()[m[K; i++) // excluding last point and start
+      |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:[m[K In member function ‘[01m[Kvoid ListenerNode::listening()[m[K’:
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:193:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  193 |         for (int i = 0; [01;35m[Ki < targetPos.size()[m[K && flag == 0; i++)
+      |                         [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:[m[K In member function ‘[01m[Kvoid ListenerNode::publish_next_point(std::vector<Point2D>&, Point2D&)[m[K’:
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:295:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  295 |             if ([01;35m[Kidx + 2 == path.size() - 1[m[K && idx + 1 != path.size() - 1)
+      |                 [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:295:55:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  295 |             if (idx + 2 == path.size() - 1 && [01;35m[Kidx + 1 != path.size() - 1[m[K)
+      |                                               [01;35m[K~~~~~~~~^~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:297:24:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kangle[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  297 |                 double [01;35m[Kangle[m[K = atan2((y1 - path[idx].y), (x1 - path[idx].x));
+      |                        [01;35m[K^~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:306:32:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  306 |             if (idx > 0 && [01;35m[Kidx < path.size()[m[K)
+      |                            [01;35m[K~~~~^~~~~~~~~~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:29:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kx1[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |             message.data = {[01;35m[Kx1[m[K, y1, theta, vx, vy, omega, speed, idx, path.size(),x0, y0};
+      |                             [01;35m[K^~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:29:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kx1[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Ky1[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |             message.data = {x1, [01;35m[Ky1[m[K, theta, vx, vy, omega, speed, idx, path.size(),x0, y0};
+      |                                 [01;35m[K^~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:33:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Ky1[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:37:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Ktheta[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |             message.data = {x1, y1, [01;35m[Ktheta[m[K, vx, vy, omega, speed, idx, path.size(),x0, y0};
+      |                                     [01;35m[K^~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:37:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Ktheta[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:44:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kvx[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |             message.data = {x1, y1, theta, [01;35m[Kvx[m[K, vy, omega, speed, idx, path.size(),x0, y0};
+      |                                            [01;35m[K^~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:44:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kvx[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:48:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kvy[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |             message.data = {x1, y1, theta, vx, [01;35m[Kvy[m[K, omega, speed, idx, path.size(),x0, y0};
+      |                                                [01;35m[K^~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:48:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kvy[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:52:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Komega[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |             message.data = {x1, y1, theta, vx, vy, [01;35m[Komega[m[K, speed, idx, path.size(),x0, y0};
+      |                                                    [01;35m[K^~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:52:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Komega[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:59:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kspeed[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |             message.data = {x1, y1, theta, vx, vy, omega, [01;35m[Kspeed[m[K, idx, path.size(),x0, y0};
+      |                                                           [01;35m[K^~~~~[m[K
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:59:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kspeed[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:66:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kidx[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 |        message.data = {x1, y1, theta, vx, vy, omega, speed, [01;35m[Kidx[m[K, path.size(),x0, y0};
+      |                                                             [01;35m[K^~~[m[K
+
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:66:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kidx[m[K’ from ‘[01m[Kint[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:80:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(& path)->std::vector<Point2D>::size()[m[K’ from ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 | .data = {x1, y1, theta, vx, vy, omega, speed, idx, [01;35m[Kpath.size()[m[K,x0, y0};
+      |                                                    [01;35m[K~~~~~~~~~^~[m[K
+
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:80:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[K(& path)->std::vector<Point2D>::size()[m[K’ from ‘[01m[Kstd::vector<Point2D>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:83:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kx0[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 | .data = {x1, y1, theta, vx, vy, omega, speed, idx, path.size(),[01;35m[Kx0[m[K, y0};
+      |                                                                [01;35m[K^~[m[K
+
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:83:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Kx0[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:87:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Ky0[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+  359 | .data = {x1, y1, theta, vx, vy, omega, speed, idx, path.size(),x0, [01;35m[Ky0[m[K};
+      |                                                                    [01;35m[K^~[m[K
+
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:87:[m[K [01;35m[Kwarning: [m[Knarrowing conversion of ‘[01m[Ky0[m[K’ from ‘[01m[Kdouble[m[K’ to ‘[01m[Kfloat[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing-Wnarrowing]8;;[m[K]
+[01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:300:20:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kdist[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+  300 |             double [01;35m[Kdist[m[K = sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));
+      |                    [01;35m[K^~~~[m[K
+In file included from [01m[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:6[m[K:
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:[m[K In function ‘[01m[Kbool argParse(int, char**, double*, optimalPlanner*, planningObjective*, std::string*)[m[K’:
+[01m[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:583:1:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type-Wreturn-type]8;;[m[K]
+  583 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[ 80%] [32m[1mLinking CXX executable controller1[0m
+[ 80%] Built target controller1
+[100%] [32m[1mLinking CXX executable main1[0m
+[100%] Built target main1
+-- Install configuration: ""
+-- Installing: /home/arbaaz/KinematicController/install/o1/lib/o1/main1
+-- Set runtime path of "/home/arbaaz/KinematicController/install/o1/lib/o1/main1" to ""
+-- Installing: /home/arbaaz/KinematicController/install/o1/lib/o1/controller1
+-- Set runtime path of "/home/arbaaz/KinematicController/install/o1/lib/o1/controller1" to ""
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/package_run_dependencies/o1
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/parent_prefix_path/o1
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/environment/ament_prefix_path.sh
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/environment/ament_prefix_path.dsv
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/environment/path.sh
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/environment/path.dsv
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.bash
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.sh
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.zsh
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.dsv
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/package.dsv
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/packages/o1
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/cmake/o1Config.cmake
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/cmake/o1Config-version.cmake
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/package.xml

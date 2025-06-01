@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/simulation_pkg/simulation_pkg.egg-info/PKG-INFO
+writing dependency_links to ../../build/simulation_pkg/simulation_pkg.egg-info/dependency_links.txt
+writing entry points to ../../build/simulation_pkg/simulation_pkg.egg-info/entry_points.txt
+writing requirements to ../../build/simulation_pkg/simulation_pkg.egg-info/requires.txt
+writing top-level names to ../../build/simulation_pkg/simulation_pkg.egg-info/top_level.txt
+reading manifest file '../../build/simulation_pkg/simulation_pkg.egg-info/SOURCES.txt'
+writing manifest file '../../build/simulation_pkg/simulation_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying resource/simulation_pkg -> /home/arbaaz/KinematicController/install/simulation_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /home/arbaaz/KinematicController/install/simulation_pkg/share/simulation_pkg
+creating /home/arbaaz/KinematicController/install/simulation_pkg/share/simulation_pkg/launch
+running install_egg_info
+Copying ../../build/simulation_pkg/simulation_pkg.egg-info to /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg-0.0.1-py3.10.egg-info
+running install_scripts
+Installing bot_simulation script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+Installing kinematic_controller script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+writing list of installed files to '/home/arbaaz/KinematicController/build/simulation_pkg/install.log'

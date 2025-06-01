@@ -1,0 +1,10 @@
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/uninstall.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/o1_uninstall.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/main1.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/test.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/edit_cache.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/rebuild_cache.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/list_install_components.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/install.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/install/local.dir
+/home/arbaaz/KinematicController/build/o1/CMakeFiles/install/strip.dir

@@ -1,0 +1,20 @@
+[ 40%] Built target controller1
+[100%] Built target main1
+-- Install configuration: ""
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/lib/o1/main1
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/lib/o1/controller1
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/package_run_dependencies/o1
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/parent_prefix_path/o1
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/environment/ament_prefix_path.sh
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/environment/path.sh
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/environment/path.dsv
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.bash
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.sh
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.zsh
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.dsv
+-- Installing: /home/arbaaz/KinematicController/install/o1/share/o1/package.dsv
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/packages/o1
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/cmake/o1Config.cmake
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/cmake/o1Config-version.cmake
+-- Up-to-date: /home/arbaaz/KinematicController/install/o1/share/o1/package.xml
