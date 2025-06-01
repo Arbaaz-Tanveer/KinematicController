@@ -96,7 +96,7 @@ To run the system, you will need to launch the simulation and the controller nod
     ros2 run simulation_pkg kinematic_controller
     ```
 
-3.  **Run the Main Node (from package 'o1'):**
+3.  **Run the PathPlanner**
 
     ```bash
     ros2 run o1 main1
