@@ -1,0 +1,44 @@
+[0.984s] Invoking command in '/home/arbaaz/KinematicController/build/simulation_pkg': PYTHONPATH=/home/arbaaz/KinematicController/build/simulation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/arbaaz/KinematicController/build/simulation_pkg/build
+[1.295s] running develop
+[1.517s] Removing /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation-pkg.egg-link (link to .)
+[1.598s] Invoked command in '/home/arbaaz/KinematicController/build/simulation_pkg' returned '0': PYTHONPATH=/home/arbaaz/KinematicController/build/simulation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/arbaaz/KinematicController/build/simulation_pkg/build
+[1.600s] Invoking command in '/home/arbaaz/KinematicController/src/simulation_pkg': PYTHONPATH=/home/arbaaz/KinematicController/build/simulation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simulation_pkg build --build-base /home/arbaaz/KinematicController/build/simulation_pkg/build install --record /home/arbaaz/KinematicController/build/simulation_pkg/install.log --single-version-externally-managed install_data --force
+[1.837s] running egg_info
+[1.837s] writing ../../build/simulation_pkg/simulation_pkg.egg-info/PKG-INFO
+[1.837s] writing dependency_links to ../../build/simulation_pkg/simulation_pkg.egg-info/dependency_links.txt
+[1.837s] writing entry points to ../../build/simulation_pkg/simulation_pkg.egg-info/entry_points.txt
+[1.838s] writing requirements to ../../build/simulation_pkg/simulation_pkg.egg-info/requires.txt
+[1.838s] writing top-level names to ../../build/simulation_pkg/simulation_pkg.egg-info/top_level.txt
+[1.847s] reading manifest file '../../build/simulation_pkg/simulation_pkg.egg-info/SOURCES.txt'
+[1.848s] writing manifest file '../../build/simulation_pkg/simulation_pkg.egg-info/SOURCES.txt'
+[1.848s] running build
+[1.849s] running build_py
+[1.849s] creating /home/arbaaz/KinematicController/build/simulation_pkg/build
+[1.849s] creating /home/arbaaz/KinematicController/build/simulation_pkg/build/lib
+[1.849s] creating /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg
+[1.849s] copying simulation_pkg/hardware.py -> /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg
+[1.850s] copying simulation_pkg/robot_sim.py -> /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg
+[1.850s] copying simulation_pkg/__init__.py -> /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg
+[1.850s] copying simulation_pkg/kinematic_controller.py -> /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg
+[1.851s] running install
+[1.851s] running install_lib
+[1.852s] creating /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg
+[1.852s] copying /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg/hardware.py -> /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg
+[1.852s] copying /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg/robot_sim.py -> /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg
+[1.852s] copying /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg/__init__.py -> /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg
+[1.852s] copying /home/arbaaz/KinematicController/build/simulation_pkg/build/lib/simulation_pkg/kinematic_controller.py -> /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg
+[1.853s] byte-compiling /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg/hardware.py to hardware.cpython-310.pyc
+[1.854s] byte-compiling /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg/robot_sim.py to robot_sim.cpython-310.pyc
+[1.858s] byte-compiling /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg/__init__.py to __init__.cpython-310.pyc
+[1.858s] byte-compiling /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg/kinematic_controller.py to kinematic_controller.cpython-310.pyc
+[1.860s] running install_data
+[1.860s] copying resource/simulation_pkg -> /home/arbaaz/KinematicController/install/simulation_pkg/share/ament_index/resource_index/packages
+[1.862s] copying package.xml -> /home/arbaaz/KinematicController/install/simulation_pkg/share/simulation_pkg
+[1.862s] running install_egg_info
+[1.864s] Copying ../../build/simulation_pkg/simulation_pkg.egg-info to /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation_pkg-0.0.1-py3.10.egg-info
+[1.865s] running install_scripts
+[1.884s] Installing bot_simulation script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+[1.884s] Installing hardware script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+[1.884s] Installing kinematic_controller script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+[1.885s] writing list of installed files to '/home/arbaaz/KinematicController/build/simulation_pkg/install.log'
+[1.927s] Invoked command in '/home/arbaaz/KinematicController/src/simulation_pkg' returned '0': PYTHONPATH=/home/arbaaz/KinematicController/build/simulation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/simulation_pkg build --build-base /home/arbaaz/KinematicController/build/simulation_pkg/build install --record /home/arbaaz/KinematicController/build/simulation_pkg/install.log --single-version-externally-managed install_data --force

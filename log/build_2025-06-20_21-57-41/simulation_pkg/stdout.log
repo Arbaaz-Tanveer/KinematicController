@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing simulation_pkg.egg-info/PKG-INFO
+writing dependency_links to simulation_pkg.egg-info/dependency_links.txt
+writing entry points to simulation_pkg.egg-info/entry_points.txt
+writing requirements to simulation_pkg.egg-info/requires.txt
+writing top-level names to simulation_pkg.egg-info/top_level.txt
+reading manifest file 'simulation_pkg.egg-info/SOURCES.txt'
+writing manifest file 'simulation_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation-pkg.egg-link (link to .)
+Installing bot_simulation script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+Installing hardware script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+Installing kinematic_controller script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg
+
+Installed /home/arbaaz/KinematicController/build/simulation_pkg
+running symlink_data

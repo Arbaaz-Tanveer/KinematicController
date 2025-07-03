@@ -25,6 +25,7 @@ setup(
         'console_scripts': [
             'bot_simulation = simulation_pkg.robot_sim:main',
             'kinematic_controller = simulation_pkg.kinematic_controller:main',
+            'hardware = simulation_pkg.hardware:main',
         ],
     },
 )

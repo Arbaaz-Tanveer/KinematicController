@@ -1,0 +1,379 @@
+[0.000000] (-) TimerEvent: {}
+[0.000357] (o1) JobQueued: {'identifier': 'o1', 'dependencies': OrderedDict()}
+[0.000453] (simulation_pkg) JobQueued: {'identifier': 'simulation_pkg', 'dependencies': OrderedDict()}
+[0.001245] (o1) JobStarted: {'identifier': 'o1'}
+[0.008408] (simulation_pkg) JobStarted: {'identifier': 'simulation_pkg'}
+[0.015564] (o1) JobProgress: {'identifier': 'o1', 'progress': 'cmake'}
+[0.016464] (o1) Command: {'cmd': ['/usr/bin/cmake', '/home/arbaaz/KinematicController/src/o1', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/arbaaz/KinematicController/install/o1'], 'cwd': '/home/arbaaz/KinematicController/build/o1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'arbaaz'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/arbaaz'), ('OLDPWD', '/home/arbaaz'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/arbaaz/KinematicController/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arbaaz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'arbaaz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/arbaaz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ThinkBook-15-G3-ACL:@/tmp/.ICE-unix/1742,unix/ThinkBook-15-G3-ACL:/tmp/.ICE-unix/1742'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f40672dc_cfb7_47c4_9749_9f2d7a491a2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/arbaaz/KinematicController/install/simulation_pkg:/home/arbaaz/KinematicController/install/o1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arbaaz/KinematicController/build/o1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/arbaaz/KinematicController/build/simulation_pkg:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/arbaaz/KinematicController/install/o1:/home/arbaaz/KinematicController/install/simulation_pkg:/opt/ros/humble')]), 'shell': False}
+[0.096080] (o1) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099496] (-) TimerEvent: {}
+[0.167248] (o1) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.179638] (o1) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199722] (-) TimerEvent: {}
+[0.272656] (o1) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.279492] (o1) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.279910] (o1) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.280482] (o1) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.284495] (o1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.300023] (-) TimerEvent: {}
+[0.400842] (-) TimerEvent: {}
+[0.436003] (o1) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.443784] (o1) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.444061] (o1) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.444430] (o1) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.448286] (o1) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.501029] (-) TimerEvent: {}
+[0.601607] (-) TimerEvent: {}
+[0.618000] (o1) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.691465] (o1) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.701773] (-) TimerEvent: {}
+[0.738742] (o1) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.779809] (simulation_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/arbaaz/KinematicController/build/simulation_pkg/build', '--no-deps', 'symlink_data'], 'cwd': '/home/arbaaz/KinematicController/build/simulation_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_IN:en', 'USER': 'arbaaz', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/arbaaz', 'OLDPWD': '/home/arbaaz', 'DESKTOP_SESSION': 'ubuntu-xorg', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'SYSTEMD_EXEC_PID': '1769', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'COLCON_PREFIX_PATH': '/home/arbaaz/KinematicController/install', 'ROS_DISTRO': 'humble', 'GTK_IM_MODULE': 'ibus', 'LOGNAME': 'arbaaz', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'arbaaz', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/opt/ros/humble/bin:/home/arbaaz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ThinkBook-15-G3-ACL:@/tmp/.ICE-unix/1742,unix/ThinkBook-15-G3-ACL:/tmp/.ICE-unix/1742', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/f40672dc_cfb7_47c4_9749_9f2d7a491a2c', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu-xorg', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.112', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/arbaaz/KinematicController/install/simulation_pkg:/home/arbaaz/KinematicController/install/o1:/opt/ros/humble', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu-xorg', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/arbaaz/KinematicController/build/simulation_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/arbaaz/KinematicController/build/simulation_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:/home/arbaaz/KinematicController/build/simulation_pkg:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/arbaaz/KinematicController/install/o1'}, 'shell': False}
+[0.796614] (o1) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.801953] (-) TimerEvent: {}
+[0.815233] (o1) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.827586] (o1) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.846589] (o1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.873557] (o1) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.902160] (-) TimerEvent: {}
+[0.934475] (o1) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.938185] (o1) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.002334] (-) TimerEvent: {}
+[1.039313] (simulation_pkg) StdoutLine: {'line': b'running develop\n'}
+[1.070059] (o1) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.102223] (o1) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.102529] (-) TimerEvent: {}
+[1.151857] (o1) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.165647] (o1) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.202729] (-) TimerEvent: {}
+[1.247325] (simulation_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[1.247731] (simulation_pkg) StdoutLine: {'line': b'creating simulation_pkg.egg-info\n'}
+[1.247818] (simulation_pkg) StdoutLine: {'line': b'writing simulation_pkg.egg-info/PKG-INFO\n'}
+[1.248015] (simulation_pkg) StdoutLine: {'line': b'writing dependency_links to simulation_pkg.egg-info/dependency_links.txt\n'}
+[1.248223] (simulation_pkg) StdoutLine: {'line': b'writing entry points to simulation_pkg.egg-info/entry_points.txt\n'}
+[1.248356] (simulation_pkg) StdoutLine: {'line': b'writing requirements to simulation_pkg.egg-info/requires.txt\n'}
+[1.248479] (simulation_pkg) StdoutLine: {'line': b'writing top-level names to simulation_pkg.egg-info/top_level.txt\n'}
+[1.248952] (simulation_pkg) StdoutLine: {'line': b"writing manifest file 'simulation_pkg.egg-info/SOURCES.txt'\n"}
+[1.252119] (simulation_pkg) StdoutLine: {'line': b"reading manifest file 'simulation_pkg.egg-info/SOURCES.txt'\n"}
+[1.252676] (simulation_pkg) StdoutLine: {'line': b"writing manifest file 'simulation_pkg.egg-info/SOURCES.txt'\n"}
+[1.254942] (simulation_pkg) StdoutLine: {'line': b'running build_ext\n'}
+[1.255590] (simulation_pkg) StdoutLine: {'line': b'Creating /home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages/simulation-pkg.egg-link (link to .)\n'}
+[1.257248] (simulation_pkg) StdoutLine: {'line': b'Installing bot_simulation script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg\n'}
+[1.257630] (simulation_pkg) StdoutLine: {'line': b'Installing hardware script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg\n'}
+[1.257755] (simulation_pkg) StdoutLine: {'line': b'Installing kinematic_controller script to /home/arbaaz/KinematicController/install/simulation_pkg/lib/simulation_pkg\n'}
+[1.257915] (simulation_pkg) StdoutLine: {'line': b'\n'}
+[1.258007] (simulation_pkg) StdoutLine: {'line': b'Installed /home/arbaaz/KinematicController/build/simulation_pkg\n'}
+[1.258073] (simulation_pkg) StdoutLine: {'line': b'running symlink_data\n'}
+[1.258220] (simulation_pkg) StdoutLine: {'line': b'creating /home/arbaaz/KinematicController/install/simulation_pkg/share/ament_index\n'}
+[1.258305] (simulation_pkg) StdoutLine: {'line': b'creating /home/arbaaz/KinematicController/install/simulation_pkg/share/ament_index/resource_index\n'}
+[1.258390] (simulation_pkg) StdoutLine: {'line': b'creating /home/arbaaz/KinematicController/install/simulation_pkg/share/ament_index/resource_index/packages\n'}
+[1.258467] (simulation_pkg) StdoutLine: {'line': b'symbolically linking /home/arbaaz/KinematicController/build/simulation_pkg/resource/simulation_pkg -> /home/arbaaz/KinematicController/install/simulation_pkg/share/ament_index/resource_index/packages\n'}
+[1.258579] (simulation_pkg) StdoutLine: {'line': b'symbolically linking /home/arbaaz/KinematicController/build/simulation_pkg/package.xml -> /home/arbaaz/KinematicController/install/simulation_pkg/share/simulation_pkg\n'}
+[1.258647] (simulation_pkg) StdoutLine: {'line': b'creating /home/arbaaz/KinematicController/install/simulation_pkg/share/simulation_pkg/launch\n'}
+[1.275164] (o1) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.275959] (o1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.303017] (-) TimerEvent: {}
+[1.382573] (o1) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.383985] (o1) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.401699] (simulation_pkg) CommandEnded: {'returncode': 0}
+[1.403365] (-) TimerEvent: {}
+[1.416723] (simulation_pkg) JobEnded: {'identifier': 'simulation_pkg', 'rc': 0}
+[1.454732] (o1) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.471991] (o1) StdoutLine: {'line': b'-- Found pluginlib: 5.1.0 (/opt/ros/humble/share/pluginlib/cmake)\n'}
+[1.503582] (-) TimerEvent: {}
+[1.513504] (o1) StdoutLine: {'line': b'-- Found ompl: /usr/include/ompl-1.5;/usr/include;/usr/include/eigen3  \n'}
+[1.526936] (o1) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") \n'}
+[1.549647] (o1) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: program_options system filesystem \n'}
+[1.564759] (o1) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.603776] (-) TimerEvent: {}
+[1.679873] (o1) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.680347] (o1) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/arbaaz/KinematicController/src/o1/include\n'}
+[1.680492] (o1) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.681286] (o1) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.682868] (o1) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.683020] (o1) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.683609] (o1) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.685725] (o1) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.702951] (o1) StdoutLine: {'line': b'-- Generating done\n'}
+[1.703911] (-) TimerEvent: {}
+[1.708886] (o1) StdoutLine: {'line': b'-- Build files have been written to: /home/arbaaz/KinematicController/build/o1\n'}
+[1.731944] (o1) CommandEnded: {'returncode': 0}
+[1.733687] (o1) JobProgress: {'identifier': 'o1', 'progress': 'build'}
+[1.735369] (o1) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/arbaaz/KinematicController/build/o1', '--', '-j12', '-l12'], 'cwd': '/home/arbaaz/KinematicController/build/o1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'arbaaz'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/arbaaz'), ('OLDPWD', '/home/arbaaz'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/arbaaz/KinematicController/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arbaaz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'arbaaz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/arbaaz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ThinkBook-15-G3-ACL:@/tmp/.ICE-unix/1742,unix/ThinkBook-15-G3-ACL:/tmp/.ICE-unix/1742'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f40672dc_cfb7_47c4_9749_9f2d7a491a2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/arbaaz/KinematicController/install/simulation_pkg:/home/arbaaz/KinematicController/install/o1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arbaaz/KinematicController/build/o1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/arbaaz/KinematicController/build/simulation_pkg:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/arbaaz/KinematicController/install/o1:/home/arbaaz/KinematicController/install/simulation_pkg:/opt/ros/humble')]), 'shell': False}
+[1.804179] (-) TimerEvent: {}
+[1.813079] (o1) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/main1.dir/src/Visualize.cpp.o\x1b[0m\n'}
+[1.813451] (o1) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/main1.dir/src/main1.cpp.o\x1b[0m\n'}
+[1.904445] (-) TimerEvent: {}
+[2.005417] (-) TimerEvent: {}
+[2.106198] (-) TimerEvent: {}
+[2.206959] (-) TimerEvent: {}
+[2.307738] (-) TimerEvent: {}
+[2.408663] (-) TimerEvent: {}
+[2.509119] (-) TimerEvent: {}
+[2.609753] (-) TimerEvent: {}
+[2.710393] (-) TimerEvent: {}
+[2.810835] (-) TimerEvent: {}
+[2.911658] (-) TimerEvent: {}
+[3.012131] (-) TimerEvent: {}
+[3.056079] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/Visualize.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Visualize::visualizeGame(std::vector<Point2D>&, Point2D&, int, double, std::vector<Point2D>&, Point2D&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.056397] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/Visualize.cpp:179:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[3.056547] (o1) StderrLine: {'line': b'  179 |     for (int i = 0; \x1b[01;35m\x1b[Ki < obstacles.size()\x1b[m\x1b[K; i++) {\n'}
+[3.056602] (o1) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.112267] (-) TimerEvent: {}
+[3.212718] (-) TimerEvent: {}
+[3.313453] (-) TimerEvent: {}
+[3.414143] (-) TimerEvent: {}
+[3.514599] (-) TimerEvent: {}
+[3.615132] (-) TimerEvent: {}
+[3.715633] (-) TimerEvent: {}
+[3.816123] (-) TimerEvent: {}
+[3.916584] (-) TimerEvent: {}
+[4.017055] (-) TimerEvent: {}
+[4.117546] (-) TimerEvent: {}
+[4.218011] (-) TimerEvent: {}
+[4.318514] (-) TimerEvent: {}
+[4.418981] (-) TimerEvent: {}
+[4.519447] (-) TimerEvent: {}
+[4.619866] (-) TimerEvent: {}
+[4.720305] (-) TimerEvent: {}
+[4.820733] (-) TimerEvent: {}
+[4.921307] (-) TimerEvent: {}
+[5.021745] (-) TimerEvent: {}
+[5.122189] (-) TimerEvent: {}
+[5.211735] (o1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:6\x1b[m\x1b[K:\n'}
+[5.212000] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvirtual double ValidityChecker::clearance(const ompl::base::State*) const\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.212146] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:124:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.212376] (o1) StderrLine: {'line': b'  124 |         for (int i = 0; \x1b[01;35m\x1b[Ki < obstacles.size()\x1b[m\x1b[K; i++)\n'}
+[5.212480] (o1) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.212578] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:137:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<PointWithRadius>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.212682] (o1) StderrLine: {'line': b'  137 |         if (\x1b[01;35m\x1b[Kcount == v.size()\x1b[m\x1b[K)\n'}
+[5.212779] (o1) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K~~~~~~^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.222360] (-) TimerEvent: {}
+[5.239298] (o1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:6\x1b[m\x1b[K:\n'}
+[5.239573] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D> plan(double, double, double, std::vector<Point2D>&, optimalPlanner, planningObjective, Point2D&, Point2D&, Point2D&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[5.239809] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:339:31:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<double>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.239955] (o1) StderrLine: {'line': b'  339 |             for (int i = 1; \x1b[01;35m\x1b[Ki < x_values.size()\x1b[m\x1b[K; i++)\n'}
+[5.240056] (o1) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.240189] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:350:19:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdist_now_fin\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.240296] (o1) StderrLine: {'line': b'  350 |             float \x1b[01;35m\x1b[Kdist_now_fin\x1b[m\x1b[K = sqrt((nowPos.x - finalPos.x) * (nowPos.x - finalPos.x) + (nowPos.y - finalPos.y) * (nowPos.y - finalPos.y));\n'}
+[5.240395] (o1) StderrLine: {'line': b'      |                   \x1b[01;35m\x1b[K^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[5.240742] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:250:133:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[KballPos\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[5.240845] (o1) StderrLine: {'line': b'  250 | ve objectiveType, Point2D &nowPos, Point2D &finalPos, \x1b[01;35m\x1b[KPoint2D &ballPos\x1b[m\x1b[K)\n'}
+[5.240899] (o1) StderrLine: {'line': b'      |                                                       \x1b[01;35m\x1b[K~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[5.240947] (o1) StderrLine: {'line': b'\n'}
+[5.322555] (-) TimerEvent: {}
+[5.423147] (-) TimerEvent: {}
+[5.523576] (-) TimerEvent: {}
+[5.623993] (-) TimerEvent: {}
+[5.724438] (-) TimerEvent: {}
+[5.824879] (-) TimerEvent: {}
+[5.925342] (-) TimerEvent: {}
+[6.025768] (-) TimerEvent: {}
+[6.126196] (-) TimerEvent: {}
+[6.226615] (-) TimerEvent: {}
+[6.327035] (-) TimerEvent: {}
+[6.427501] (-) TimerEvent: {}
+[6.527925] (-) TimerEvent: {}
+[6.628368] (-) TimerEvent: {}
+[6.728810] (-) TimerEvent: {}
+[6.829255] (-) TimerEvent: {}
+[6.929691] (-) TimerEvent: {}
+[7.030170] (-) TimerEvent: {}
+[7.130608] (-) TimerEvent: {}
+[7.230931] (-) TimerEvent: {}
+[7.331336] (-) TimerEvent: {}
+[7.379733] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint findclosestpoint(std::vector<Point2D>&, Point2D&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.380022] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:53:23:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.380180] (o1) StderrLine: {'line': b'   53 |     for (int i = 0; \x1b[01;35m\x1b[Ki < targetPos.size()\x1b[m\x1b[K; i++) // excluding last point and start\n'}
+[7.380291] (o1) StderrLine: {'line': b'      |                     \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.431517] (-) TimerEvent: {}
+[7.438420] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ListenerNode::listening()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.438683] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:193:27:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.438837] (o1) StderrLine: {'line': b'  193 |         for (int i = 0; \x1b[01;35m\x1b[Ki < targetPos.size()\x1b[m\x1b[K && flag == 0; i++)\n'}
+[7.438939] (o1) StderrLine: {'line': b'      |                         \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.440593] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid ListenerNode::publish_next_point(std::vector<Point2D>&, Point2D&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.440828] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:295:25:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.440928] (o1) StderrLine: {'line': b'  295 |             if (\x1b[01;35m\x1b[Kidx + 2 == path.size() - 1\x1b[m\x1b[K && idx + 1 != path.size() - 1)\n'}
+[7.440979] (o1) StderrLine: {'line': b'      |                 \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.441026] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:295:55:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.441077] (o1) StderrLine: {'line': b'  295 |             if (idx + 2 == path.size() - 1 && \x1b[01;35m\x1b[Kidx + 1 != path.size() - 1\x1b[m\x1b[K)\n'}
+[7.441146] (o1) StderrLine: {'line': b'      |                                               \x1b[01;35m\x1b[K~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.441195] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:297:24:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kangle\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.441244] (o1) StderrLine: {'line': b'  297 |                 double \x1b[01;35m\x1b[Kangle\x1b[m\x1b[K = atan2((y1 - path[idx].y), (x1 - path[idx].x));\n'}
+[7.441292] (o1) StderrLine: {'line': b'      |                        \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.441339] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:306:32:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 and \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.441404] (o1) StderrLine: {'line': b'  306 |             if (idx > 0 && \x1b[01;35m\x1b[Kidx < path.size()\x1b[m\x1b[K)\n'}
+[7.441456] (o1) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.442547] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kx1\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.442688] (o1) StderrLine: {'line': b'  359 |             message.data = {\x1b[01;35m\x1b[Kx1\x1b[m\x1b[K, y1, theta, vx, vy, omega, speed, idx, path.size(),x0, y0};\n'}
+[7.442756] (o1) StderrLine: {'line': b'      |                             \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.442805] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:29:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kx1\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.442856] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Ky1\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.442949] (o1) StderrLine: {'line': b'  359 |             message.data = {x1, \x1b[01;35m\x1b[Ky1\x1b[m\x1b[K, theta, vx, vy, omega, speed, idx, path.size(),x0, y0};\n'}
+[7.443002] (o1) StderrLine: {'line': b'      |                                 \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.443049] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:33:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Ky1\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443123] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Ktheta\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443178] (o1) StderrLine: {'line': b'  359 |             message.data = {x1, y1, \x1b[01;35m\x1b[Ktheta\x1b[m\x1b[K, vx, vy, omega, speed, idx, path.size(),x0, y0};\n'}
+[7.443225] (o1) StderrLine: {'line': b'      |                                     \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.443272] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:37:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Ktheta\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443325] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kvx\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443374] (o1) StderrLine: {'line': b'  359 |             message.data = {x1, y1, theta, \x1b[01;35m\x1b[Kvx\x1b[m\x1b[K, vy, omega, speed, idx, path.size(),x0, y0};\n'}
+[7.443422] (o1) StderrLine: {'line': b'      |                                            \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.443468] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:44:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kvx\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443516] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kvy\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443568] (o1) StderrLine: {'line': b'  359 |             message.data = {x1, y1, theta, vx, \x1b[01;35m\x1b[Kvy\x1b[m\x1b[K, omega, speed, idx, path.size(),x0, y0};\n'}
+[7.443615] (o1) StderrLine: {'line': b'      |                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.443662] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:48:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kvy\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443710] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Komega\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443763] (o1) StderrLine: {'line': b'  359 |             message.data = {x1, y1, theta, vx, vy, \x1b[01;35m\x1b[Komega\x1b[m\x1b[K, speed, idx, path.size(),x0, y0};\n'}
+[7.443810] (o1) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.443856] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:52:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Komega\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443905] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kspeed\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.443963] (o1) StderrLine: {'line': b'  359 |             message.data = {x1, y1, theta, vx, vy, omega, \x1b[01;35m\x1b[Kspeed\x1b[m\x1b[K, idx, path.size(),x0, y0};\n'}
+[7.444010] (o1) StderrLine: {'line': b'      |                                                           \x1b[01;35m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[7.444061] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:59:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kspeed\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444127] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kidx\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444180] (o1) StderrLine: {'line': b'  359 |        message.data = {x1, y1, theta, vx, vy, omega, speed, \x1b[01;35m\x1b[Kidx\x1b[m\x1b[K, path.size(),x0, y0};\n'}
+[7.444228] (o1) StderrLine: {'line': b'      |                                                             \x1b[01;35m\x1b[K^~~\x1b[m\x1b[K\n'}
+[7.444275] (o1) StderrLine: {'line': b'\n'}
+[7.444325] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:66:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kidx\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444374] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(& path)->std::vector<Point2D>::size()\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444431] (o1) StderrLine: {'line': b'  359 | .data = {x1, y1, theta, vx, vy, omega, speed, idx, \x1b[01;35m\x1b[Kpath.size()\x1b[m\x1b[K,x0, y0};\n'}
+[7.444478] (o1) StderrLine: {'line': b'      |                                                    \x1b[01;35m\x1b[K~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[7.444525] (o1) StderrLine: {'line': b'\n'}
+[7.444571] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:80:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[K(& path)->std::vector<Point2D>::size()\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kstd::vector<Point2D>::size_type\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444630] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kx0\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444679] (o1) StderrLine: {'line': b'  359 | .data = {x1, y1, theta, vx, vy, omega, speed, idx, path.size(),\x1b[01;35m\x1b[Kx0\x1b[m\x1b[K, y0};\n'}
+[7.444725] (o1) StderrLine: {'line': b'      |                                                                \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.444772] (o1) StderrLine: {'line': b'\n'}
+[7.444818] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:83:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Kx0\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444870] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:87:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Ky0\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.444925] (o1) StderrLine: {'line': b'  359 | .data = {x1, y1, theta, vx, vy, omega, speed, idx, path.size(),x0, \x1b[01;35m\x1b[Ky0\x1b[m\x1b[K};\n'}
+[7.444974] (o1) StderrLine: {'line': b'      |                                                                    \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[7.445020] (o1) StderrLine: {'line': b'\n'}
+[7.445066] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:359:87:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Knarrowing conversion of \xe2\x80\x98\x1b[01m\x1b[Ky0\x1b[m\x1b[K\xe2\x80\x99 from \xe2\x80\x98\x1b[01m\x1b[Kdouble\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kfloat\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wnarrowing\x07-Wnarrowing\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.445135] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:300:20:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused variable \xe2\x80\x98\x1b[01m\x1b[Kdist\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable\x07-Wunused-variable\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.445194] (o1) StderrLine: {'line': b'  300 |             double \x1b[01;35m\x1b[Kdist\x1b[m\x1b[K = sqrt((y2 - y1) * (y2 - y1) + (x2 - x1) * (x2 - x1));\n'}
+[7.445241] (o1) StderrLine: {'line': b'      |                    \x1b[01;35m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[7.531687] (-) TimerEvent: {}
+[7.632137] (-) TimerEvent: {}
+[7.732577] (-) TimerEvent: {}
+[7.833068] (-) TimerEvent: {}
+[7.933536] (-) TimerEvent: {}
+[8.033945] (-) TimerEvent: {}
+[8.134402] (-) TimerEvent: {}
+[8.234816] (-) TimerEvent: {}
+[8.335256] (-) TimerEvent: {}
+[8.435708] (-) TimerEvent: {}
+[8.536076] (-) TimerEvent: {}
+[8.636508] (-) TimerEvent: {}
+[8.736969] (-) TimerEvent: {}
+[8.837415] (-) TimerEvent: {}
+[8.937874] (-) TimerEvent: {}
+[9.038328] (-) TimerEvent: {}
+[9.138763] (-) TimerEvent: {}
+[9.239211] (-) TimerEvent: {}
+[9.339645] (-) TimerEvent: {}
+[9.440076] (-) TimerEvent: {}
+[9.540538] (-) TimerEvent: {}
+[9.640960] (-) TimerEvent: {}
+[9.741459] (-) TimerEvent: {}
+[9.841887] (-) TimerEvent: {}
+[9.942328] (-) TimerEvent: {}
+[10.042959] (-) TimerEvent: {}
+[10.143425] (-) TimerEvent: {}
+[10.243854] (-) TimerEvent: {}
+[10.344518] (-) TimerEvent: {}
+[10.432247] (o1) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/src/main1.cpp:6\x1b[m\x1b[K:\n'}
+[10.432515] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kbool argParse(int, char**, double*, optimalPlanner*, planningObjective*, std::string*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[10.432627] (o1) StderrLine: {'line': b'\x1b[01m\x1b[K/home/arbaaz/KinematicController/src/o1/include/PathPlanner.hpp:583:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcontrol reaches end of non-void function [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreturn-type\x07-Wreturn-type\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[10.432730] (o1) StderrLine: {'line': b'  583 | \x1b[01;35m\x1b[K}\x1b[m\x1b[K\n'}
+[10.432824] (o1) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^\x1b[m\x1b[K\n'}
+[10.444625] (-) TimerEvent: {}
+[10.545280] (-) TimerEvent: {}
+[10.645750] (-) TimerEvent: {}
+[10.746208] (-) TimerEvent: {}
+[10.846649] (-) TimerEvent: {}
+[10.947145] (-) TimerEvent: {}
+[11.047606] (-) TimerEvent: {}
+[11.148031] (-) TimerEvent: {}
+[11.248505] (-) TimerEvent: {}
+[11.348905] (-) TimerEvent: {}
+[11.449367] (-) TimerEvent: {}
+[11.549779] (-) TimerEvent: {}
+[11.650199] (-) TimerEvent: {}
+[11.750623] (-) TimerEvent: {}
+[11.851040] (-) TimerEvent: {}
+[11.951496] (-) TimerEvent: {}
+[12.051904] (-) TimerEvent: {}
+[12.152358] (-) TimerEvent: {}
+[12.252779] (-) TimerEvent: {}
+[12.353212] (-) TimerEvent: {}
+[12.453657] (-) TimerEvent: {}
+[12.554151] (-) TimerEvent: {}
+[12.654567] (-) TimerEvent: {}
+[12.754976] (-) TimerEvent: {}
+[12.855430] (-) TimerEvent: {}
+[12.955839] (-) TimerEvent: {}
+[13.056251] (-) TimerEvent: {}
+[13.156667] (-) TimerEvent: {}
+[13.257079] (-) TimerEvent: {}
+[13.357515] (-) TimerEvent: {}
+[13.457935] (-) TimerEvent: {}
+[13.558375] (-) TimerEvent: {}
+[13.658799] (-) TimerEvent: {}
+[13.759208] (-) TimerEvent: {}
+[13.859797] (-) TimerEvent: {}
+[13.960209] (-) TimerEvent: {}
+[14.060665] (-) TimerEvent: {}
+[14.161179] (-) TimerEvent: {}
+[14.261649] (-) TimerEvent: {}
+[14.362184] (-) TimerEvent: {}
+[14.462743] (-) TimerEvent: {}
+[14.563306] (-) TimerEvent: {}
+[14.663755] (-) TimerEvent: {}
+[14.666379] (o1) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable main1\x1b[0m\n'}
+[14.763954] (-) TimerEvent: {}
+[14.864752] (-) TimerEvent: {}
+[14.965256] (-) TimerEvent: {}
+[15.065888] (-) TimerEvent: {}
+[15.166556] (-) TimerEvent: {}
+[15.267197] (-) TimerEvent: {}
+[15.367840] (-) TimerEvent: {}
+[15.468527] (-) TimerEvent: {}
+[15.569072] (-) TimerEvent: {}
+[15.669674] (-) TimerEvent: {}
+[15.770200] (-) TimerEvent: {}
+[15.870704] (-) TimerEvent: {}
+[15.971204] (-) TimerEvent: {}
+[16.071713] (-) TimerEvent: {}
+[16.172227] (-) TimerEvent: {}
+[16.273085] (-) TimerEvent: {}
+[16.373499] (-) TimerEvent: {}
+[16.390894] (o1) StdoutLine: {'line': b'[100%] Built target main1\n'}
+[16.408204] (o1) CommandEnded: {'returncode': 0}
+[16.409521] (o1) JobProgress: {'identifier': 'o1', 'progress': 'install'}
+[16.419525] (o1) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/arbaaz/KinematicController/build/o1'], 'cwd': '/home/arbaaz/KinematicController/build/o1', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'arbaaz'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/arbaaz'), ('OLDPWD', '/home/arbaaz'), ('DESKTOP_SESSION', 'ubuntu-xorg'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '1769'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('COLCON_PREFIX_PATH', '/home/arbaaz/KinematicController/install'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'arbaaz'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'arbaaz'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/arbaaz/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ThinkBook-15-G3-ACL:@/tmp/.ICE-unix/1742,unix/ThinkBook-15-G3-ACL:/tmp/.ICE-unix/1742'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/f40672dc_cfb7_47c4_9749_9f2d7a491a2c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu-xorg'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/arbaaz/KinematicController/install/simulation_pkg:/home/arbaaz/KinematicController/install/o1:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu-xorg'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/arbaaz/KinematicController/build/o1'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu-xorg:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu-xorg:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/arbaaz/KinematicController/build/simulation_pkg:/home/arbaaz/KinematicController/install/simulation_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/arbaaz/KinematicController/install/o1:/home/arbaaz/KinematicController/install/simulation_pkg:/opt/ros/humble')]), 'shell': False}
+[16.428204] (o1) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.428794] (o1) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[16.429496] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/lib/o1/main1\n'}
+[16.439955] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/package_run_dependencies/o1\n'}
+[16.450968] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/parent_prefix_path/o1\n'}
+[16.462078] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/environment/ament_prefix_path.sh\n'}
+[16.473305] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/environment/ament_prefix_path.dsv\n'}
+[16.473491] (-) TimerEvent: {}
+[16.483513] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/environment/path.sh\n'}
+[16.495165] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/environment/path.dsv\n'}
+[16.507083] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.bash\n'}
+[16.519007] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.sh\n'}
+[16.530374] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.zsh\n'}
+[16.540676] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/local_setup.dsv\n'}
+[16.550826] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/package.dsv\n'}
+[16.561380] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/ament_index/resource_index/packages/o1\n'}
+[16.571929] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/cmake/o1Config.cmake\n'}
+[16.573635] (-) TimerEvent: {}
+[16.581971] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/cmake/o1Config-version.cmake\n'}
+[16.592975] (o1) StdoutLine: {'line': b'-- Symlinking: /home/arbaaz/KinematicController/install/o1/share/o1/package.xml\n'}
+[16.607906] (o1) CommandEnded: {'returncode': 0}
+[16.618392] (o1) JobEnded: {'identifier': 'o1', 'rc': 0}
+[16.619515] (-) EventReactorShutdown: {}
