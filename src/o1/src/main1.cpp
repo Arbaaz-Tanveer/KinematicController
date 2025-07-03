@@ -47,7 +47,6 @@ std::vector<pair<double, double>> points;
 
 int findclosestpoint(std::vector<Point2D> &targetPos, Point2D &nowPos)
 {
-   =20
     double min_dist = 1000000;
     int idx = 0;
     for (int i = 0; i < targetPos.size(); i++)
