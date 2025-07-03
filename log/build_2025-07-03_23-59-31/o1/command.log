@@ -1,2 +1,0 @@
-Invoking command in '/home/arbaaz/KinematicController/build/o1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/arbaaz/KinematicController/install/simulation_pkg:/opt/ros/humble /usr/bin/cmake --build /home/arbaaz/KinematicController/build/o1 -- -j12 -l12
-Invoked command in '/home/arbaaz/KinematicController/build/o1' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/arbaaz/KinematicController/install/simulation_pkg:/opt/ros/humble /usr/bin/cmake --build /home/arbaaz/KinematicController/build/o1 -- -j12 -l12

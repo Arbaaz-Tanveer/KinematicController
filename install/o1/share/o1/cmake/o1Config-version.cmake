@@ -1,1 +1,0 @@
-/home/arbaaz/KinematicController/build/o1/ament_cmake_core/o1Config-version.cmake
