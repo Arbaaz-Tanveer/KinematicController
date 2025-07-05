@@ -38,8 +38,8 @@ long long int iteration_count = 0;
 int flag = 0;
 double obs_size = 0.7;
 double max_angle = 0.5;
-double max_acceleration = 1;
-double max_speed = 3;
+double max_acceleration = 0.5;
+double max_speed = 1;
 
 std::vector<Point2D> obs, targetPos; // Changed to dynamic size
 Point2D nowPos(0, 0, 0), finalPos(0, 0, 0), ballPos(0, 0, 0);
@@ -127,7 +127,7 @@ public:
 
     void listening()
     {
-        if (!my_pose_received || !obstacles_received || !ball_pose_received || !target_pose_received)
+        if (!my_pose_received || !obstacles_received || !target_pose_received)
             return;
 
         for (const auto &obstacle : obs)

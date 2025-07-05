@@ -43,8 +43,8 @@ class TrajectoryController(Node):
         self.path_length = 0
         
         # Controller parameters (tunable)
-        self.max_linear_accel = 3    # m/s²
-        self.max_linear_velocity = 3  # m/s
+        self.max_linear_accel = 1    # m/s²
+        self.max_linear_velocity = 1 # m/s
         self.max_angular_accel = 0.5   # rad/s²
         self.position_tolerance = 0.01 # m
         self.final_position_tolerance = 0.005  # tighter tolerance for final damping
@@ -79,9 +79,15 @@ class TrajectoryController(Node):
         # PD control parameters for orientation
         self.Kp_theta = 2.0    # Proportional gain
         self.Kd_theta = 0.2    # Derivative gain (tunable)
-        # Proportional gain for velocity control (tunable)
-        self.Kp_parallel = 1.0
         self.last_delta_theta = 0.0  # To store previous orientation error
+        
+        # PD gains for parallel direction
+        self.Kp_parallel_pos = 3.0  # Proportional gain for position error (1/s²)
+        self.Kd_parallel_vel = 6 # Derivative gain for velocity error (1/s)
+        
+        # PD gains for perpendicular direction
+        self.Kp_perp_pos = 4  # Proportional gain for position error (1/s²)
+        self.Kd_perp_vel = 10.0  # Derivative gain for velocity error (1/s)
         
         self.get_logger().info('Trajectory Controller initialized')
 
@@ -131,7 +137,7 @@ class TrajectoryController(Node):
         if dt <= 0.0 or dt > 1.0:
             dt = 0.02  # Fallback to 50 Hz nominal
             
-        # Update consegn state
+        # Update current state
         self.current_x = msg.data[0]
         self.current_y = msg.data[1]
         self.current_theta = msg.data[2]
@@ -175,7 +181,7 @@ class TrajectoryController(Node):
             )
 
     def compute_trajectory_control(self, dt):
-        """Compute control commands using kinematic equations"""
+        """Compute control commands using PD control for accelerations"""
         twist = Twist()
         
         # Calculate distance to target
@@ -229,12 +235,9 @@ class TrajectoryController(Node):
         parallel_dist, perp_dist, remaining_parallel_dist, traj_length = self.project_position_onto_trajectory()
         v_parallel, v_perp, target_v_parallel = self.project_velocity_onto_trajectory()
         
-        # Calculate control accelerations
-        a_parallel, t_parallel = self.calculate_parallel_acceleration(
-            v_parallel, target_v_parallel, remaining_parallel_dist, dt)
-        
-        a_perp = self.calculate_perpendicular_acceleration(
-            perp_dist, v_perp, t_parallel*0.7, dt)
+        # Calculate control accelerations using PD control
+        a_parallel = self.calculate_parallel_acceleration(v_parallel, target_v_parallel, remaining_parallel_dist)
+        a_perp = self.calculate_perpendicular_acceleration(perp_dist, v_perp)
         
         # Calculate new velocities
         new_vx, new_vy = self.calculate_velocity_commands(a_parallel, a_perp, dt)
@@ -315,104 +318,33 @@ class TrajectoryController(Node):
 
         return v_parallel, v_perp, target_v_parallel
         
-    def calculate_parallel_acceleration(self, v_parallel, target_v_parallel, remaining_parallel_dist, dt):
-        """Calculate acceleration along the trajectory direction with smoother control"""
-        direction_to_target = 1 if remaining_parallel_dist > 0 else -1
-        remaining_parallel_dist = abs(remaining_parallel_dist)
-        
-        # If target velocity is zero, we need to stop at the target
-        if abs(target_v_parallel) < self.epsilon:
-            # Calculate deceleration to stop smoothly at the target
-            if remaining_parallel_dist > self.epsilon:
-                # Proportional deceleration based on remaining distance
-                a_parallel = - (v_parallel ** 2) / (2 * remaining_parallel_dist)
-            else:
-                # Apply maximum deceleration when very close to target
-                a_parallel = -self.max_linear_accel * direction_to_target
-        else:
-            # Calculate acceleration to reach target velocity
-            velocity_error = target_v_parallel - v_parallel
-            a_parallel = self.Kp_parallel * velocity_error
-            
-            # Adjust acceleration to prevent overshooting based on remaining distance
-            if remaining_parallel_dist < self.epsilon:
-                a_parallel = 0.0
-            else:
-                # Limit acceleration to avoid overshooting
-                max_a_to_target = (target_v_parallel ** 2 - v_parallel ** 2) / (2 * remaining_parallel_dist)
-                a_parallel = min(a_parallel, max_a_to_target) if direction_to_target > 0 else max(a_parallel, max_a_to_target)
-        
-        # Clamp acceleration to prevent sudden changes
+    def calculate_parallel_acceleration(self, v_parallel, target_v_parallel, remaining_parallel_dist):
+        """Calculate acceleration along the trajectory direction using PD control"""
+        e_pos = remaining_parallel_dist  # Position error
+        e_vel = target_v_parallel - v_parallel  # Velocity error
+        a_parallel = self.Kp_parallel_pos * e_pos + self.Kd_parallel_vel * e_vel
         a_parallel = self.clamp(a_parallel, -self.max_linear_accel, self.max_linear_accel)
-        
-        # Estimate time to reach target velocity or stop
-        if abs(a_parallel) > self.epsilon:
-            t_parallel = abs((target_v_parallel - v_parallel) / a_parallel)
-        else:
-            t_parallel = self.min_time
-        
         if self.debug_mode:
             self.get_logger().debug(
                 f'PARALLEL: dist={remaining_parallel_dist:.3f}, v={v_parallel:.3f}, '
                 f'target_v={target_v_parallel:.3f}, a={a_parallel:.3f}'
             )
-        
-        return a_parallel, t_parallel
+        print(f'[PARALLEL] remaining_dist={remaining_parallel_dist:.3f}m, v_current={v_parallel:.3f}m/s, '
+          f'v_target={target_v_parallel:.3f}m/s, accel={a_parallel:.3f}m/s²')
+        return a_parallel
     
-    def calculate_perpendicular_acceleration(self, perp_dist, v_perp, t_parallel, dt):
-        """Calculate acceleration perpendicular to the trajectory"""
-        t_parallel = max(0.3, t_parallel)
-        
-        epsilon = self.epsilon
-        sign_perp_dist = 1 if perp_dist >= 0 else -1
-        stopping_dist = (v_perp**2) / (2 * self.max_linear_accel)
-
-        if abs(perp_dist) < epsilon:
-            a_perp = -math.copysign(min(abs(v_perp) / dt, self.max_linear_accel), v_perp)
-            return a_perp
-        else:
-            s = abs(perp_dist)
-            v_corr = -v_perp * sign_perp_dist
-            if s < epsilon:
-                d = 0
-            else:
-                d = v_perp**2 / (2 * s)
-                
-            if d > epsilon and abs(v_perp / d) < t_parallel and v_corr > 0:
-                a_perp = d * sign_perp_dist
-            elif v_corr > 0 and stopping_dist >= abs(perp_dist):
-                a_perp = sign_perp_dist * self.max_linear_accel
-                if self.debug_mode:
-                    self.get_logger().debug(f"Full perpendicular correction: dist={abs(perp_dist):.3f}, stopping_dist={stopping_dist:.3f}")
-            else:
-                A = t_parallel ** 2
-                B = -(4 * s - 2 * v_corr * t_parallel)
-                C = -v_corr**2
-
-                disc = B**2 - 4 * A * C
-                if disc < 0:
-                    a_perp = -self.max_linear_accel * sign_perp_dist
-                else:
-                    sqrt_disc = math.sqrt(disc)
-                    a1 = (-B + sqrt_disc) / (2 * A)
-                    a2 = (-B - sqrt_disc) / (2 * A)
-                    candidates = [a for a in (a1, a2) if a > 0]
-                    candidate_a = min(candidates) if candidates else self.max_linear_accel
-                    if candidate_a <= self.max_linear_accel:
-                        a_perp = -candidate_a * sign_perp_dist
-                    else:
-                        t_parallel = (-v_corr + math.sqrt(2 * (v_corr**2 + 2 * d * self.max_linear_accel))) / self.max_linear_accel
-                        if self.debug_mode:
-                            self.get_logger().debug(f"Relaxing time: new time={t_parallel:.3f}")
-                        a_perp = -self.max_linear_accel * sign_perp_dist if abs(v_corr) < self.max_linear_velocity else 0.0
-        
+    def calculate_perpendicular_acceleration(self, perp_dist, v_perp):
+        """Calculate acceleration perpendicular to the trajectory using PD control"""
+        e_pos = perp_dist  # Position error (desired is 0)
+        e_vel = -v_perp    # Velocity error (desired is 0, so error is -v_perp)
+        a_perp = -self.Kp_perp_pos * e_pos - self.Kd_perp_vel * v_perp
         a_perp = self.clamp(a_perp, -self.max_linear_accel, self.max_linear_accel)
-
         if self.debug_mode:
             self.get_logger().debug(
                 f'PERP: dist={perp_dist:.3f}, v={v_perp:.3f}, a={a_perp:.3f}'
             )
-
+        print(f'[PERPENDICULAR] perp_error={perp_dist:.3f}m, v_perp={v_perp:.3f}m/s, '
+          f'accel={a_perp:.3f}m/s²')
         return a_perp
         
     def calculate_velocity_commands(self, a_parallel, a_perp, dt):
